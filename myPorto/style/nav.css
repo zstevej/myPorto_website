@@ -1,0 +1,159 @@
+nav {
+  position: fixed;
+  display: flex;
+  left: 0;
+  top: 0;
+  right: 0;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 2%;
+  background: linear-gradient(to top, transparent, black);
+  z-index: 999;
+}
+
+nav h1 {
+  font-size: 3rem;
+  letter-spacing: -1px;
+}
+
+nav h1 span {
+  color: var(--primary);
+}
+
+.nav_con ul {
+  display: flex;
+  margin: 1rem auto;
+  align-items: center;
+}
+
+.nav_con ul li {
+  margin: 5px 5px;
+  padding: 5px 15px;
+  font-size: 18px;
+}
+
+.nav_con ul li a {
+  color: #fff;
+  transition: 0.2s;
+}
+
+.nav_con ul li a:hover {
+  color: var(--primary);
+}
+
+nav .search-form {
+  position: absolute;
+  align-items: center;
+  margin-left: auto;
+  top: 100%;
+  right: 2%;
+  background-color: #fff;
+  width: 24.598rem;
+  height: 2.95rem;
+  display: inline-block;
+  transform: scaleY(0);
+  transform-origin: top right;
+  transition: 0.2s;
+}
+
+nav .search-form.active {
+  transform: scaleY(1);
+}
+
+.fa_con a i {
+  font-size: 20px;
+  transition: 0.2s;
+}
+
+.fa_con a i:hover {
+  transform: scale(1.1);
+}
+
+.search-button-active {
+  color: var(--primary);
+}
+
+#hamburger-menu {
+  display: none;
+}
+
+nav .search-form input {
+  letter-spacing: -0.15px;
+  height: 100%;
+  width: 100%;
+  font-size: 1.2rem;
+  color: var(--placeholder);
+  padding: 1rem;
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 85%;
+  }
+
+  nav {
+    padding: 0.5rem 1rem;
+    background-color: var(--background);
+  }
+
+  .nav_con .navbar-nav {
+    display: inline-block;
+  }
+
+  .nav_con ul li {
+    margin: 1rem;
+    background: linear-gradient(to left, transparent, rgba(50, 50, 50, 0.8));
+    border-radius: var(--borad-card);
+    width: 100%;
+  }
+
+  nav .navbar-nav {
+    position: fixed;
+    display: block;
+    margin-right: 0;
+    top: 3.51rem;
+    right: -100%;
+    background-color: var(--background);
+    width: 14rem;
+    height: 100vh;
+    transition: right 0.3s;
+    visibility: hidden;
+  }
+
+  .fa_con a i {
+    margin-inline: 0.5rem;
+  }
+
+  nav .navbar-nav.active {
+    right: 0;
+    visibility: visible;
+    z-index: 10;
+  }
+
+  nav .navbar-nav a::after {
+    transform-origin: 0 0;
+  }
+
+  nav .navbar-nav a:hover::after {
+    transform: scaleX(0.9);
+  }
+
+  nav .search-form {
+    right: 0;
+    background-color: #fff;
+    width: 100%;
+    height: 3rem;
+    display: inline-block;
+    transform: scaleY(0);
+    transform-origin: top right;
+    transition: 0.2s;
+  }
+
+  #hamburger-menu {
+    display: inline-block;
+  }
+
+  .hamburger-menu-active {
+    color: var(--primary);
+  }
+}

@@ -1,0 +1,76 @@
+:root {
+  --primary: #00c9b5;
+  --container: rgb(40, 40, 40);
+  --background: black;
+  --borad-card: 6px;
+  --borad-button: 15px;
+  --p: 16px;
+  --h2-450: 32px;
+  --h2: 36px;
+  --h3: 22px;
+  --placeholder: grey;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  list-style: none;
+  list-style-type: none;
+  outline: none;
+  text-decoration: none;
+  border: none;
+}
+
+html {
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+}
+
+html a {
+  color: #fff;
+}
+
+body {
+  background-color: var(--background);
+  color: #fff;
+}
+
+.about,
+.myProduct,
+.card,
+.contact {
+  height: auto;
+  padding-top: 4.52rem;
+}
+
+.about h2,
+.myProduct h2,
+.con_card h2,
+.contact h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: var(--h2);
+  padding-block: 0.2rem;
+}
+
+.about h2 span,
+.myProduct h2 span,
+.myProduct h4 span,
+.card h2 span,
+.contact h2 span,
+footer span,
+.popup h2 span {
+  color: var(--primary);
+}
+
+@media (max-width: 450px) {
+  .about h2,
+  .myProduct h2,
+  .con_card h2,
+  .contact h2 {
+    font-size: var(--h2-450);
+  }
+}

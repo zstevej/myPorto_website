@@ -1,0 +1,91 @@
+.popup {
+  display: none;
+  position: fixed;
+  width: 90%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--container);
+  border-radius: var(--borad-card);
+  border: 1px solid var(--grey);
+  padding: 1rem 0.8rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  z-index: 1000;
+}
+
+.popup-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.popup h2 {
+  font-size: var(--h3);
+  border-bottom: 1px solid #ffffffcd;
+  padding-bottom: 0.2rem;
+}
+
+.popup .par {
+  font-size: 14px;
+  margin-block: 1rem;
+  text-align: left;
+  line-height: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.popup .par p {
+  width: auto;
+  background-color: rgba(20, 20, 20, 0.5);
+}
+
+.popup button {
+  background-color: var(--primary);
+  font-size: 14px;
+  padding: 0.3rem 1rem;
+  border: 2px solid transparent;
+  border-radius: var(--borad-button);
+  color: var(--background);
+  font-weight: 600;
+}
+
+.popup button:active {
+  border: 2px solid var(--primary);
+  background-color: transparent;
+  color: #fff;
+}
+
+/* table */
+.styled-table tbody tr td p {
+  padding-left: 5px;
+  margin-bottom: 2px;
+  border-radius: 2px;
+}
+
+@media (min-width: 800px) {
+  .popup {
+    width: 40%;
+  }
+
+  .popup .par {
+    padding-inline: 1rem;
+  }
+
+  .popup button:hover {
+    border: 2px solid var(--primary);
+    background-color: transparent;
+    color: #fff;
+  }
+
+  .styled-table tbody tr td p {
+    padding-left: 0.5rem;
+    margin-bottom: 4px;
+    border-radius: 5px;
+  }
+}

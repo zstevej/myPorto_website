@@ -1,0 +1,135 @@
+.contact {
+  text-align: center;
+}
+
+.con_contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2rem;
+  width: auto;
+}
+
+.content_contact p {
+  font-size: var(--p);
+}
+
+.content_down {
+  display: flex;
+  width: 35rem;
+  height: 24rem;
+  border-radius: var(--borad-card);
+}
+
+.content_down iframe,
+.content_down .form {
+  width: 100%;
+  height: 100%;
+  border-radius: var(--borad-card);
+}
+
+.content_down .form {
+  margin-inline: 2rem;
+  background-color: rgba(50, 50, 50, 0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-inline: 1.5rem;
+}
+
+.content_down .list_form {
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: var(--borad-card);
+  width: 100%;
+  height: 4.5rem;
+  margin-block: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content_down .list_form input {
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+  color: #fff;
+  padding-left: 10px;
+}
+
+.content_down .list_form input::placeholder {
+  color: rgba(150, 150, 150, 0.9);
+  font-size: 14px;
+}
+
+.content_down .list_form i {
+  color: var(--primary);
+  font-size: 1.5rem;
+  margin-inline: 1.5rem;
+}
+
+.content_down button {
+  border: 2px solid var(--primary);
+  border-radius: var(--borad-button);
+  width: 7.4rem;
+  height: 2.4rem;
+  margin-top: 1.2rem;
+  font-weight: 600;
+  background-color: var(--primary);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.content_down button:hover {
+  background-color: transparent;
+  color: #fff;
+  font-weight: 500;
+}
+
+@media (max-width: 450px) {
+  .contact {
+    padding-top: 4.54rem;
+  }
+
+  .con_contact {
+    margin-top: 1rem;
+  }
+
+  .content_contact p {
+    margin-inline: auto;
+    max-width: 25rem;
+    line-height: 20px;
+  }
+
+  .content_down {
+    display: flex;
+    width: 35rem;
+    height: 18rem;
+    border-radius: var(--borad-card);
+  }
+
+  .content_down .form {
+    margin-top: 1rem;
+  }
+
+  .content_down iframe {
+    margin-inline: 1rem;
+  }
+
+  .content_down .list_form {
+    border: 1px solid #fff;
+  }
+
+  .content_down button {
+    width: 8.2rem;
+    height: 2.4rem;
+    margin-top: 0.8rem;
+    transition: 0.1s;
+  }
+
+  .content_down .form {
+    margin-inline: 1rem;
+    padding-block: 0.5rem;
+  }
+}
